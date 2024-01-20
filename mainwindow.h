@@ -17,6 +17,21 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButtonYOBO_clicked();
+
+    void on_pushButtonBUSCAR_clicked();
+
+    void on_pushButtonCARRITO_clicked();
+
+    void on_pushButtonLOGIN_clicked();
+
+    void on_pushButtonYOBO_2_clicked();
+
+    void on_pushButtonYOBO_3_clicked();
+
+    void on_pushButtonYOBO_4_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
