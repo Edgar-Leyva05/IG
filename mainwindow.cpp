@@ -6,6 +6,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+
+
 {
     ui->setupUi(this);
 }
@@ -462,6 +464,7 @@ void MainWindow::categoria6Opcion3Seleccionada()
 
 void MainWindow::on_toolButtonREGISTRAR_clicked()
 {
+
     // Crea un QMenu
     QMenu *menuRegistrar = new QMenu(this);
 
@@ -477,23 +480,26 @@ void MainWindow::on_toolButtonREGISTRAR_clicked()
     // Conecta las acciones a slots si es necesario
     connect(accionRegistrar1, &QAction::triggered, this, &MainWindow::registrar1Seleccionada);
     connect(accionRegistrar2, &QAction::triggered, this, &MainWindow::registrar2Seleccionada);
-    connect(accionRegistrar2, &QAction::triggered, this, &MainWindow::registrar3Seleccionada);
+    connect(accionRegistrar3, &QAction::triggered, this, &MainWindow::registrar3Seleccionada);
     menuRegistrar->exec(ui->toolButtonREGISTRAR->mapToGlobal(QPoint(0, ui->toolButtonREGISTRAR->height())));
 }
 
 void MainWindow::registrar1Seleccionada()
 {
-    // Código a ejecutar cuando se selecciona la registrar 1
+    // Código a ejecutar cuando se selecciona la registrar iniciar sesion
+
+    ui->stackedWidget->setCurrentIndex(3);
 }
 
 void MainWindow::registrar2Seleccionada()
 {
-    // Código a ejecutar cuando se selecciona la registrar 2
+    // Código a ejecutar cuando se selecciona la registrar
+    ui->stackedWidget->setCurrentIndex(4);
 }
 
-//prueba de las demas
 
 void MainWindow::registrar3Seleccionada()
 {
-    // Código a ejecutar cuando se selecciona la registrar 1
+    // Código a ejecutar cuando se selecciona la registrar como vendedor
+   ui->stackedWidget->setCurrentIndex(3);
 }
