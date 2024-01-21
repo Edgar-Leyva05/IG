@@ -32,6 +32,12 @@ private slots:
 
     void on_pushButtonYOBO_4_clicked();
 
+    void on_pushButtonINICIARSESION_clicked();
+
+    void on_pushButtonCREARCUENTA_clicked();
+
+    void on_pushButtonYOBO_5_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

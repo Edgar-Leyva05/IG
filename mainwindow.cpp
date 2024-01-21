@@ -55,3 +55,21 @@ void MainWindow::on_pushButtonYOBO_4_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+
+void MainWindow::on_pushButtonINICIARSESION_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_pushButtonCREARCUENTA_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_pushButtonYOBO_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
