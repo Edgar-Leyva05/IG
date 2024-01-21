@@ -41,6 +41,10 @@ private slots:
     void on_toolButtonCATEGORIAS_clicked();
     void categoria1Seleccionada();
     void categoria2Seleccionada();
+    void categoria1Opcion1Seleccionada();
+    void categoria1Opcion2Seleccionada();
+    void categoria2Opcion1Seleccionada();
+    void categoria2Opcion2Seleccionada();
 
 private:
     Ui::MainWindow *ui;
