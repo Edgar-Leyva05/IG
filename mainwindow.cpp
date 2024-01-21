@@ -76,20 +76,33 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
     QMenu *menuCategorias = new QMenu(this);
 
     // Crea las acciones para CATEGORIAS y agrégalas al menú
-    accionCategoria1 = menuCategorias->addAction("Categoria 1");
-    accionCategoria2 = menuCategorias->addAction("Categoria 2");
+    accionCategoria1 = menuCategorias->addAction("Ropa");
+    accionCategoria2 = menuCategorias->addAction("Tecnología");
 
     // Crea menús desplegables adicionales para las categorías
     QMenu *menuCategoria1 = new QMenu("Opciones Categoria 1", this);
     QMenu *menuCategoria2 = new QMenu("Opciones Categoria 2", this);
 
     // Agrega acciones al menú desplegable de Categoria 1
-    QAction *accionCat1Opcion1 = menuCategoria1->addAction("Opción 1");
-    QAction *accionCat1Opcion2 = menuCategoria1->addAction("Opción 2");
+    QAction *accionCat1Opcion1 = menuCategoria1->addAction("Pantalón");
+    QAction *accionCat1Opcion2 = menuCategoria1->addAction("Camisa");
+    //Agregadas prueba de ropa
+    QAction *accionCat1Opcion3 = menuCategoria1->addAction("short");
+    QAction *accionCat1Opcion4 = menuCategoria1->addAction("Polo");
+    QAction *accionCat1Opcion5 = menuCategoria1->addAction("Polera");
+    QAction *accionCat1Opcion6 = menuCategoria1->addAction("Chompa");
+
+
 
     // Agrega acciones al menú desplegable de Categoria 2
-    QAction *accionCat2Opcion1 = menuCategoria2->addAction("Opción 1");
-    QAction *accionCat2Opcion2 = menuCategoria2->addAction("Opción 2");
+    QAction *accionCat2Opcion1 = menuCategoria2->addAction("Laptop");
+    QAction *accionCat2Opcion2 = menuCategoria2->addAction("Celular");
+    //Agregadas prueba de tecnologia
+    QAction *accionCat2Opcion3 = menuCategoria2->addAction("Pantallas");
+    QAction *accionCat2Opcion4 = menuCategoria2->addAction("Accesorios");
+    QAction *accionCat2Opcion5 = menuCategoria2->addAction("Consolas");
+    QAction *accionCat2Opcion6 = menuCategoria2->addAction("Videojuegos");
+
 
     // Conecta las acciones a los slots correspondientes
     connect(accionCategoria1, &QAction::triggered, this, &MainWindow::categoria1Seleccionada);
@@ -97,9 +110,21 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
 
     connect(accionCat1Opcion1, &QAction::triggered, this, &MainWindow::categoria1Opcion1Seleccionada);
     connect(accionCat1Opcion2, &QAction::triggered, this, &MainWindow::categoria1Opcion2Seleccionada);
+   //Agregadas prueba de ropa
+    connect(accionCat1Opcion3, &QAction::triggered, this, &MainWindow::categoria1Opcion3Seleccionada);
+    connect(accionCat1Opcion4, &QAction::triggered, this, &MainWindow::categoria1Opcion4Seleccionada);
+    connect(accionCat1Opcion5, &QAction::triggered, this, &MainWindow::categoria1Opcion5Seleccionada);
+    connect(accionCat1Opcion6, &QAction::triggered, this, &MainWindow::categoria1Opcion6Seleccionada);
+
 
     connect(accionCat2Opcion1, &QAction::triggered, this, &MainWindow::categoria2Opcion1Seleccionada);
     connect(accionCat2Opcion2, &QAction::triggered, this, &MainWindow::categoria2Opcion2Seleccionada);
+    //Agregadas prueba tecnologia
+    connect(accionCat2Opcion3, &QAction::triggered, this, &MainWindow::categoria2Opcion3Seleccionada);
+    connect(accionCat2Opcion4, &QAction::triggered, this, &MainWindow::categoria2Opcion4Seleccionada);
+    connect(accionCat2Opcion5, &QAction::triggered, this, &MainWindow::categoria2Opcion5Seleccionada);
+    connect(accionCat2Opcion6, &QAction::triggered, this, &MainWindow::categoria2Opcion6Seleccionada);
+
 
     // Configura los menús desplegables para las categorías
     accionCategoria1->setMenu(menuCategoria1);
@@ -124,6 +149,13 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
     // Muestra el menú en la posición del botón
     menuCategorias->exec(ui->toolButtonCATEGORIAS->mapToGlobal(QPoint(0, ui->toolButtonCATEGORIAS->height())));
 }
+
+
+
+
+
+
+
 
 void MainWindow::categoria1Seleccionada()
 {
@@ -150,6 +182,29 @@ void MainWindow::categoria1Opcion2Seleccionada()
     // Código a ejecutar cuando se selecciona la Opción 2 de Categoria 1
 }
 
+//prueba de ropa
+void MainWindow::categoria1Opcion3Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 3 de Categoria 1
+}
+
+void MainWindow::categoria1Opcion4Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 4 de Categoria 1
+}
+void MainWindow::categoria1Opcion5Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 5 de Categoria 1
+}
+
+void MainWindow::categoria1Opcion6Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 6 de Categoria 1
+}
+
+
+
+
 void MainWindow::categoria2Opcion1Seleccionada()
 {
     // Código a ejecutar cuando se selecciona la Opción 1 de Categoria 2
@@ -159,3 +214,25 @@ void MainWindow::categoria2Opcion2Seleccionada()
 {
     // Código a ejecutar cuando se selecciona la Opción 2 de Categoria 2
 }
+
+//prueba tecnologia
+void MainWindow::categoria2Opcion3Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 3 de Categoria 2
+}
+
+void MainWindow::categoria2Opcion4Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 4 de Categoria 2
+}
+void MainWindow::categoria2Opcion5Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 5 de Categoria 2
+}
+
+void MainWindow::categoria2Opcion6Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la Opción 6 de Categoria 2
+}
+
+

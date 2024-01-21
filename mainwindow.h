@@ -39,12 +39,25 @@ private slots:
     void on_pushButtonYOBO_5_clicked();
 
     void on_toolButtonCATEGORIAS_clicked();
-    void categoria1Seleccionada();
-    void categoria2Seleccionada();
+    void categoria1Seleccionada();//ropa
+    void categoria2Seleccionada();//tecnologia
+    //clase ropa derivada de categoria 1
     void categoria1Opcion1Seleccionada();
     void categoria1Opcion2Seleccionada();
+    void categoria1Opcion3Seleccionada();
+    void categoria1Opcion4Seleccionada();
+    void categoria1Opcion5Seleccionada();
+    void categoria1Opcion6Seleccionada();
+
+    //categoria Tecnologia derivada de categoria 2
     void categoria2Opcion1Seleccionada();
     void categoria2Opcion2Seleccionada();
+    void categoria2Opcion3Seleccionada();
+    void categoria2Opcion4Seleccionada();
+    void categoria2Opcion5Seleccionada();
+    void categoria2Opcion6Seleccionada();
+
+
 
 private:
     Ui::MainWindow *ui;
