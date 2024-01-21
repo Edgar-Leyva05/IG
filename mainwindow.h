@@ -99,6 +99,11 @@ private slots:
     void categoria6Opcion3Seleccionada();
 
 
+    //Creacion de boton de registrar (con menu)
+    void on_toolButtonREGISTRAR_clicked();
+    void registrar1Seleccionada();//INICIAR SESION
+    void registrar2Seleccionada();//REGISTRARSE
+    void registrar3Seleccionada();//VENDEDOR
 
 private:
     Ui::MainWindow *ui;
@@ -110,6 +115,11 @@ private:
     QAction *accionCategoria4;
     QAction *accionCategoria5;
     QAction *accionCategoria6;
+
+    //Creacion del boton Registrar
+    QAction *accionRegistrar1;
+    QAction *accionRegistrar2;
+    QAction *accionRegistrar3;
 
 };
 #endif // MAINWINDOW_H

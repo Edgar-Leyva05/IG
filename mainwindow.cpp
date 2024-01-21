@@ -459,3 +459,41 @@ void MainWindow::categoria6Opcion3Seleccionada()
 }
 
 
+
+void MainWindow::on_toolButtonREGISTRAR_clicked()
+{
+    // Crea un QMenu
+    QMenu *menuRegistrar = new QMenu(this);
+
+    // Crea las acciones para CATEGORIAS y agrégalas al menú
+    accionRegistrar1 = menuRegistrar->addAction("Iniciar Sesion");
+    accionRegistrar2 = menuRegistrar->addAction("Registrarse");
+    accionRegistrar3 = menuRegistrar->addAction("Iniciar sesión como Vendedor");
+
+    // Configura el QToolButton para mostrar el menú principal de REGISTRAR
+    ui->toolButtonREGISTRAR->setMenu(menuRegistrar);
+    ui->toolButtonREGISTRAR->setPopupMode(QToolButton::InstantPopup);
+
+    // Conecta las acciones a slots si es necesario
+    connect(accionRegistrar1, &QAction::triggered, this, &MainWindow::registrar1Seleccionada);
+    connect(accionRegistrar2, &QAction::triggered, this, &MainWindow::registrar2Seleccionada);
+    connect(accionRegistrar2, &QAction::triggered, this, &MainWindow::registrar3Seleccionada);
+    menuRegistrar->exec(ui->toolButtonREGISTRAR->mapToGlobal(QPoint(0, ui->toolButtonREGISTRAR->height())));
+}
+
+void MainWindow::registrar1Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la registrar 1
+}
+
+void MainWindow::registrar2Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la registrar 2
+}
+
+//prueba de las demas
+
+void MainWindow::registrar3Seleccionada()
+{
+    // Código a ejecutar cuando se selecciona la registrar 1
+}

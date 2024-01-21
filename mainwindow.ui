@@ -37,8 +37,8 @@
        <widget class="QPushButton" name="pushButtonLOGIN">
         <property name="geometry">
          <rect>
-          <x>660</x>
-          <y>20</y>
+          <x>270</x>
+          <y>150</y>
           <width>75</width>
           <height>24</height>
          </rect>
@@ -63,7 +63,7 @@
        <widget class="QPushButton" name="pushButtonCARRITO">
         <property name="geometry">
          <rect>
-          <x>560</x>
+          <x>500</x>
           <y>20</y>
           <width>75</width>
           <height>24</height>
@@ -94,6 +94,19 @@
         </property>
         <property name="text">
          <string>CATEGORIAS</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="toolButtonREGISTRAR">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>20</y>
+          <width>131</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>REGISTRARSE/INICIAR SESION</string>
         </property>
        </widget>
       </widget>
@@ -179,7 +192,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page">
+      <widget class="QWidget" name="pageINICIAR_SESION">
        <widget class="QPushButton" name="pushButtonYOBO_5">
         <property name="geometry">
          <rect>
@@ -266,7 +279,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_4">
+      <widget class="QWidget" name="pageCREAR_CUENTA">
        <widget class="QPushButton" name="pushButtonYOBO_4">
         <property name="geometry">
          <rect>
