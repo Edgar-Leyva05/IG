@@ -41,6 +41,15 @@ private slots:
     void on_toolButtonCATEGORIAS_clicked();
     void categoria1Seleccionada();//ropa
     void categoria2Seleccionada();//tecnologia
+
+  //prueba de las demas categorias
+    void categoria3Seleccionada();//Electrodomesticos
+    void categoria4Seleccionada();//Belleza y cuidados personal
+    void categoria5Seleccionada();//Instrumentos musicales
+    void categoria6Seleccionada();//Joyas
+
+
+
     //clase ropa derivada de categoria 1
     void categoria1Opcion1Seleccionada();
     void categoria1Opcion2Seleccionada();
@@ -58,11 +67,52 @@ private slots:
     void categoria2Opcion6Seleccionada();
 
 
+    //categoria Tecnologia derivada de categoria 3
+    void categoria3Opcion1Seleccionada();
+    void categoria3Opcion2Seleccionada();
+    void categoria3Opcion3Seleccionada();
+    void categoria3Opcion4Seleccionada();
+    void categoria3Opcion5Seleccionada();
+    void categoria3Opcion6Seleccionada();
+
+
+    //categoria Tecnologia derivada de categoria 4
+    void categoria4Opcion1Seleccionada();
+    void categoria4Opcion2Seleccionada();
+    void categoria4Opcion3Seleccionada();
+    void categoria4Opcion4Seleccionada();
+    void categoria4Opcion5Seleccionada();
+    void categoria4Opcion6Seleccionada();
+
+
+    //categoria Tecnologia derivada de categoria 5
+    void categoria5Opcion1Seleccionada();
+    void categoria5Opcion2Seleccionada();
+    void categoria5Opcion3Seleccionada();
+    void categoria5Opcion4Seleccionada();
+    void categoria5Opcion5Seleccionada();
+    void categoria5Opcion6Seleccionada();
+
+
+    //categoria Tecnologia derivada de categoria 6
+    void categoria6Opcion1Seleccionada();
+    void categoria6Opcion2Seleccionada();
+    void categoria6Opcion3Seleccionada();
+    void categoria6Opcion4Seleccionada();
+    void categoria6Opcion5Seleccionada();
+    void categoria6Opcion6Seleccionada();
+
 
 private:
     Ui::MainWindow *ui;
     QAction *accionCategoria1;
     QAction *accionCategoria2;
+
+//prueba de demas categorias
+    QAction *accionCategoria3;
+    QAction *accionCategoria4;
+    QAction *accionCategoria5;
+    QAction *accionCategoria6;
 
 };
 #endif // MAINWINDOW_H
