@@ -6,423 +6,445 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>674</width>
+    <height>573</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>781</width>
-      <height>551</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="pagePRINCIPAL">
-     <widget class="QPushButton" name="pushButtonYOBO">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-      <property name="text">
-       <string>YOBO</string>
-      </property>
+      <widget class="QWidget" name="pagePRINCIPAL">
+       <widget class="QPushButton" name="pushButtonYOBO">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>YOBO</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonLOGIN">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>20</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LOGIN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonBUSCAR">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BUSCAR</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonCARRITO">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>20</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CARRITO</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditBUSCADOR">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="toolButtonCATEGORIAS">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CATEGORIAS</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="toolButtonDESC_CUPON">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>80</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DESCUENTOS Y CUPONES</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pageCARRITO">
+       <widget class="QPushButton" name="pushButtonYOBO_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>YOBO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCARRITO">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>40</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Carrito</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pageLOGIN">
+       <widget class="QPushButton" name="pushButtonYOBO_3">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>60</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>YOBO</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonINICIARSESION">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>120</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>INICIAR SESIÓN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonCREARCUENTA">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>180</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CREAR CUENTA</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelLOGIN">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>10</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QPushButton" name="pushButtonYOBO_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>YOBO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINICIARSESION">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>10</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Iniciar Sesion</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARCORREO">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>150</y>
+          <width>161</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar Correo Electronico</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARCONTRA">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>200</y>
+          <width>161</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar Contraseña</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRCORREO">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>150</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRCONTRA">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>190</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonINICIARSESION_LOG">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>250</y>
+          <width>151</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>INICIAR SESION</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <widget class="QPushButton" name="pushButtonYOBO_4">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>111</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>YOBO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCREARCUENTA">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>40</y>
+          <width>83</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CREAR CUENTA</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonCREARCUENTA_LOG">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>470</y>
+          <width>91</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CREAR CUENTA</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARCONTRA_CREAR_USER">
+        <property name="geometry">
+         <rect>
+          <x>201</x>
+          <y>397</y>
+          <width>105</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar Contraseña</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRCORREO_USER">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>324</y>
+          <width>133</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARCORREO_CREAR_USER">
+        <property name="geometry">
+         <rect>
+          <x>201</x>
+          <y>324</y>
+          <width>143</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar Correo Electronico</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARNOMBRE_USER">
+        <property name="geometry">
+         <rect>
+          <x>201</x>
+          <y>103</y>
+          <width>162</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar el Nombre del usuario</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARCELULAR_USER">
+        <property name="geometry">
+         <rect>
+          <x>201</x>
+          <y>176</y>
+          <width>155</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar el Celular del usuario</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRNOMBRE_USER">
+        <property name="geometry">
+         <rect>
+          <x>369</x>
+          <y>103</y>
+          <width>133</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRCELULAR_USER">
+        <property name="geometry">
+         <rect>
+          <x>362</x>
+          <y>176</y>
+          <width>133</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRDNI_USER">
+        <property name="geometry">
+         <rect>
+          <x>345</x>
+          <y>250</y>
+          <width>133</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRECIBIRCONTRA_USER">
+        <property name="geometry">
+         <rect>
+          <x>312</x>
+          <y>397</y>
+          <width>133</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelINGRESARDNI_USER">
+        <property name="geometry">
+         <rect>
+          <x>201</x>
+          <y>250</y>
+          <width>138</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar el DNI del usuario</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
-     <widget class="QPushButton" name="pushButtonLOGIN">
-      <property name="geometry">
-       <rect>
-        <x>660</x>
-        <y>20</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>LOGIN</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonBUSCAR">
-      <property name="geometry">
-       <rect>
-        <x>370</x>
-        <y>20</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>BUSCAR</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonCARRITO">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>20</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CARRITO</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditBUSCADOR">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>20</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="pageCARRITO">
-     <widget class="QPushButton" name="pushButtonYOBO_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>YOBO</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelCARRITO">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>40</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Carrito</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="pageLOGIN">
-     <widget class="QPushButton" name="pushButtonYOBO_3">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>60</y>
-        <width>161</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>YOBO</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonINICIARSESION">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>120</y>
-        <width>181</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>INICIAR SESIÓN</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonCREARCUENTA">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>180</y>
-        <width>181</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CREAR CUENTA</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelLOGIN">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>10</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Login</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page">
-     <widget class="QPushButton" name="pushButtonYOBO_5">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>10</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>YOBO</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINICIARSESION">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>10</y>
-        <width>101</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Iniciar Sesion</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARCORREO">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>150</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar Correo Electronico</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARCONTRA">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>200</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar Contraseña</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRCORREO">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>150</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRCONTRA">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>190</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonINICIARSESION_LOG">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>250</y>
-        <width>151</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>INICIAR SESION</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_4">
-     <widget class="QPushButton" name="pushButtonYOBO_4">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>YOBO</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelCREARCUENTA">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>20</y>
-        <width>141</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CREAR CUENTA</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButtonCREARCUENTA_LOG">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>370</y>
-        <width>151</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CREAR CUENTA</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRCONTRA_USER">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>270</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARCONTRA_CREAR_USER">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>270</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar Contraseña</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRCORREO_USER">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>230</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARCORREO_CREAR_USER">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>230</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar Correo Electronico</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARNOMBRE_USER">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>130</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar el Nombre del usuario</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARCELULAR_USER">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>170</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar el Celular del usuario</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelINGRESARDNI_USER">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>200</y>
-        <width>161</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ingresar el DNI del usuario</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRNOMBRE_USER">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>130</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRCELULAR_USER">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>160</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEditRECIBIRDNI_USER">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>200</y>
-        <width>131</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>674</width>
      <height>22</height>
     </rect>
    </property>
