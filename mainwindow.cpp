@@ -133,8 +133,7 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
     //Agregadas prueba de ropa
     QAction *accionCat4Opcion3 = menuCategoria4->addAction("Perfumeria");
     QAction *accionCat4Opcion4 = menuCategoria4->addAction("Accesorios");
-    QAction *accionCat4Opcion5 = menuCategoria4->addAction("Por si al caso");
-    QAction *accionCat4Opcion6 = menuCategoria4->addAction("Por si al caso");
+
 
     // Agrega acciones al menú desplegable de Categoria 5
     QAction *accionCat5Opcion1 = menuCategoria5->addAction("Microfonos");
@@ -143,16 +142,14 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
     QAction *accionCat5Opcion3 = menuCategoria5->addAction("De viento");
     QAction *accionCat5Opcion4 = menuCategoria5->addAction("De percusión");
     QAction *accionCat5Opcion5 = menuCategoria5->addAction("Accesorios");
-    QAction *accionCat5Opcion6 = menuCategoria5->addAction("Por si al caso");
+
 
     // Agrega acciones al menú desplegable de Categoria 6
     QAction *accionCat6Opcion1 = menuCategoria6->addAction("Relojes");
     QAction *accionCat6Opcion2 = menuCategoria6->addAction("Joyas");
     //Agregadas prueba de ropa
     QAction *accionCat6Opcion3 = menuCategoria6->addAction("Otros");
-    QAction *accionCat6Opcion4 = menuCategoria6->addAction("Por si al caso");
-    QAction *accionCat6Opcion5 = menuCategoria6->addAction("Por si al caso");
-    QAction *accionCat6Opcion6 = menuCategoria6->addAction("Por si al caso");
+
 
 
 
@@ -189,7 +186,6 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
     //prueba de las demas categorias
     connect(accionCat3Opcion1, &QAction::triggered, this, &MainWindow::categoria3Opcion1Seleccionada);
     connect(accionCat3Opcion2, &QAction::triggered, this, &MainWindow::categoria3Opcion2Seleccionada);
-    //Agregadas prueba tecnologia
     connect(accionCat3Opcion3, &QAction::triggered, this, &MainWindow::categoria3Opcion3Seleccionada);
     connect(accionCat3Opcion4, &QAction::triggered, this, &MainWindow::categoria3Opcion4Seleccionada);
     connect(accionCat3Opcion5, &QAction::triggered, this, &MainWindow::categoria3Opcion5Seleccionada);
@@ -197,27 +193,21 @@ void MainWindow::on_toolButtonCATEGORIAS_clicked()
 
     connect(accionCat4Opcion1, &QAction::triggered, this, &MainWindow::categoria4Opcion1Seleccionada);
     connect(accionCat4Opcion2, &QAction::triggered, this, &MainWindow::categoria4Opcion2Seleccionada);
-    //Agregadas prueba tecnologia
     connect(accionCat4Opcion3, &QAction::triggered, this, &MainWindow::categoria4Opcion3Seleccionada);
     connect(accionCat4Opcion4, &QAction::triggered, this, &MainWindow::categoria4Opcion4Seleccionada);
-    connect(accionCat4Opcion5, &QAction::triggered, this, &MainWindow::categoria4Opcion5Seleccionada);
-    connect(accionCat4Opcion6, &QAction::triggered, this, &MainWindow::categoria4Opcion6Seleccionada);
+
 
     connect(accionCat5Opcion1, &QAction::triggered, this, &MainWindow::categoria5Opcion1Seleccionada);
     connect(accionCat5Opcion2, &QAction::triggered, this, &MainWindow::categoria5Opcion2Seleccionada);
-    //Agregadas prueba tecnologia
     connect(accionCat5Opcion3, &QAction::triggered, this, &MainWindow::categoria5Opcion3Seleccionada);
     connect(accionCat5Opcion4, &QAction::triggered, this, &MainWindow::categoria5Opcion4Seleccionada);
     connect(accionCat5Opcion5, &QAction::triggered, this, &MainWindow::categoria5Opcion5Seleccionada);
-    connect(accionCat5Opcion6, &QAction::triggered, this, &MainWindow::categoria5Opcion6Seleccionada);
+
 
     connect(accionCat6Opcion1, &QAction::triggered, this, &MainWindow::categoria6Opcion1Seleccionada);
     connect(accionCat6Opcion2, &QAction::triggered, this, &MainWindow::categoria6Opcion2Seleccionada);
-    //Agregadas prueba tecnologia
     connect(accionCat6Opcion3, &QAction::triggered, this, &MainWindow::categoria6Opcion3Seleccionada);
-    connect(accionCat6Opcion4, &QAction::triggered, this, &MainWindow::categoria6Opcion4Seleccionada);
-    connect(accionCat6Opcion5, &QAction::triggered, this, &MainWindow::categoria6Opcion5Seleccionada);
-    connect(accionCat6Opcion6, &QAction::triggered, this, &MainWindow::categoria6Opcion6Seleccionada);
+
 
 
 
@@ -423,15 +413,7 @@ void MainWindow::categoria4Opcion4Seleccionada()
 {
     // Código a ejecutar cuando se selecciona la Opción 4 de Categoria 4
 }
-void MainWindow::categoria4Opcion5Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 5 de Categoria 4
-}
 
-void MainWindow::categoria4Opcion6Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 6 de Categoria 4
-}
 
 //Instrumentos musicales
 void MainWindow::categoria5Opcion1Seleccionada()
@@ -458,10 +440,7 @@ void MainWindow::categoria5Opcion5Seleccionada()
     // Código a ejecutar cuando se selecciona la Opción 5 de Categoria 5
 }
 
-void MainWindow::categoria5Opcion6Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 6 de Categoria 5
-}
+
 
 //Joyas
 void MainWindow::categoria6Opcion1Seleccionada()
@@ -479,16 +458,4 @@ void MainWindow::categoria6Opcion3Seleccionada()
     // Código a ejecutar cuando se selecciona la Opción 3 de Categoria 6
 }
 
-void MainWindow::categoria6Opcion4Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 4 de Categoria 6
-}
-void MainWindow::categoria6Opcion5Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 5 de Categoria 6
-}
 
-void MainWindow::categoria6Opcion6Seleccionada()
-{
-    // Código a ejecutar cuando se selecciona la Opción 6 de Categoria 6
-}

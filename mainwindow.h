@@ -81,8 +81,7 @@ private slots:
     void categoria4Opcion2Seleccionada();
     void categoria4Opcion3Seleccionada();
     void categoria4Opcion4Seleccionada();
-    void categoria4Opcion5Seleccionada();
-    void categoria4Opcion6Seleccionada();
+
 
 
     //categoria Tecnologia derivada de categoria 5
@@ -91,16 +90,14 @@ private slots:
     void categoria5Opcion3Seleccionada();
     void categoria5Opcion4Seleccionada();
     void categoria5Opcion5Seleccionada();
-    void categoria5Opcion6Seleccionada();
+
 
 
     //categoria Tecnologia derivada de categoria 6
     void categoria6Opcion1Seleccionada();
     void categoria6Opcion2Seleccionada();
     void categoria6Opcion3Seleccionada();
-    void categoria6Opcion4Seleccionada();
-    void categoria6Opcion5Seleccionada();
-    void categoria6Opcion6Seleccionada();
+
 
 
 private:
