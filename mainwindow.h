@@ -38,7 +38,14 @@ private slots:
 
     void on_pushButtonYOBO_5_clicked();
 
+    void on_toolButtonCATEGORIAS_clicked();
+    void categoria1Seleccionada();
+    void categoria2Seleccionada();
+
 private:
     Ui::MainWindow *ui;
+    QAction *accionCategoria1;
+    QAction *accionCategoria2;
+
 };
 #endif // MAINWINDOW_H
